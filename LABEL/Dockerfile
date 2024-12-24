@@ -1,0 +1,4 @@
+FROM almalinux
+LABEL AUTHOR="RAMAN"\
+      COURSE="CSE"\
+      DURATION="5 HR'S"
