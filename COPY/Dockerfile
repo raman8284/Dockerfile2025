@@ -5,7 +5,8 @@ RUN apt-get update && apt-get install -y \
     nginx \
     && rm -rf /var/lib/apt/lists/*
 
-COPY nginx.conf /etc/nginx/nginx.conf
+#COPY nginx.conf /etc/nginx/nginx.conf
+RUN rm -rf /usr/share/nginx/html/index.html
 COPY qi/ /usr/share/nginx/html/
 CMD ["nginx", "-g", "daemon off;"]
 
