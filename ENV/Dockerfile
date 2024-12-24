@@ -1,4 +1,4 @@
 FROM almalinux
 ENV AUTHOR="SAKETH"\
-    DURATION="5HRS"\
+    DURATION="5HRS"\    
     COURSE="K8S"
