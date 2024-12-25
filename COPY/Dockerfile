@@ -15,7 +15,7 @@ RUN rm -rf /usr/share/nginx/html/index.html
 
 # Copy your static website files into the container
 # Make sure you have a local folder named 'mywebsite' containing your static files (index.html, CSS, JS)
-COPY qi/ /usr/share/nginx/html/
+COPY qi/ /var/www/html/
 
 # Change ownership of the files so Nginx can access them
 RUN chown -R www-data:www-data /usr/share/nginx/html \
