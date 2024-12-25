@@ -2,7 +2,7 @@
 FROM ubuntu:latest
 
 # Set non-interactive mode for apt-get
-ENV DEBIAN_FRONTEND=noninteractive
+#ENV DEBIAN_FRONTEND=noninteractive
 
 # Update the package list and install Nginx
 RUN apt-get update && \
