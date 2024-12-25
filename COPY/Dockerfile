@@ -13,7 +13,7 @@ RUN apt-get update && \
 RUN rm -rf /usr/share/nginx/html/*
 
 # Copy the static website files to the Nginx web directory
-COPY qi/ /usr/share/nginx/html
+COPY ./qi  /usr/share/nginx/html
 
 # Expose port 80 for the web server
 EXPOSE 80
