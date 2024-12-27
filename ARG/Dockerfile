@@ -1,2 +1,8 @@
+# ARG VERSION
+# FROM almalinux:${VERSION}
+
 ARG VERSION
-FROM almalinux:${VERSION}
+FROM almalinux:${VERSION:-8}
+ARG GREETING="HAI RAM"
+RUN echo "$GREETING"
+RUN echo "$VERSION"
